@@ -1,0 +1,124 @@
+/* Configurações Gerais */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    margin: 0;
+    background: rgb(0, 0, 0);
+    font-family: Avatar;
+}
+
+@font-face{
+    font-family: Avatar;
+    src: url("font/HerculanumLTStd.woff");
+}
+
+/* Configuração dos elementos de tela */
+h1{
+    width: 700;
+    height: 238;
+    background: url("img/avatar-logo.png");
+    text-indent: -3000px;
+}
+
+p.subtitulo{
+    margin-bottom: 10px;
+}
+
+.centralizar{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.lateral{
+    width: 171px;
+    height: 100%;
+    background: url("img/elementos.jpg") repeat-y;
+}
+
+.esquerda{
+    float: left;
+}
+
+.direita{
+    float: right;
+}
+
+.caixa{
+    height: 100%;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    background-attachment: fixed;
+}
+
+#agua{
+    border-top: 30px solid rgb(74, 214, 249);
+    background-image: url("img/Agua.jpg");
+}
+
+#terra{
+    border-top: 30px solid rgb(50, 154, 67);
+    background-image: url("img/Terra.jpg");
+}
+
+#fogo{
+    border-top: 30px solid rgb(226, 95, 17);
+    background-image: url("img/Fogo.jpg");
+}
+
+#ar{
+    border-top: 30px solid rgb(225, 215, 118);
+    background-image: url("img/Ar.jpg");
+}
+
+h2{
+    font-size: 2.7em;
+}
+.caixa-info p{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.caixa-info{
+    width: 500px;
+    float: left;
+    margin-left: 560px;
+    margin-top: 30px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+#agua .caixa-info{
+    color: rgb(74, 214, 249);
+    background: rgba(74, 214, 249, 0.1);
+}
+
+#terra .caixa-info{
+    color: rgb(50, 154, 67);
+    background: rgba(50, 154, 67, 0.1);
+}
+
+#fogo .caixa-info{
+    color: rgb(226, 95, 17);
+    background: rgba(226, 95, 17, 0.1);
+}
+
+#ar .caixa-info{
+    
+    color: rgb(225, 215, 118);
+    background: rgba(255, 215, 118, 0.1);
+}
+
+#rodape{
+    color: #fff;
+    float: right;
+    font-size: 0.7em;
+}
+
+
+
