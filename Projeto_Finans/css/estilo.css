@@ -1,0 +1,46 @@
+/* ----- TOPO ----- */
+
+/* Logo */
+.logo-topo{
+    width: 142px;
+    background: url('../img/logo.png') center no-repeat;
+    background-size: 142px;
+    text-indent: -3000px;
+}
+
+/* ----- CAPA ----- */
+#home{
+    background: #ffc107;
+    color: white;
+}
+
+
+/* ----- CONTEÚDO ----- */
+.espacamento-padrao{
+    padding: 60px 0;
+    border-bottom: 1px solid #ffc107;
+}
+
+.recurso{
+    margin: 20px 0;
+    padding: 10px 5px;
+    background: #ffc107;
+    border-radius: 20px;
+}
+
+.caixa{
+    margin: 20px 0;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.recurso-title{
+    font-size: 2.2em;
+}
+
+.tabela{
+    background: #ffc107;
+    border-radius: 20px;
+}
+
+
