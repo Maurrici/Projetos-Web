@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Museu Nacional</title>
+        <meta charset="utf-8"/>
+        <!--Normalize CSS-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+
+        <!--Estilo Customizado CSS-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv
+            /3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div id="container"><!--Ínicio do Container-->
+            
+            <header><!--Ínicio do Header-->
+                
+                <div id="logo">
+                    <h1><a href="">Museu Nacional</a></h1>
+                </div>
+
+                <nav><!--Ínicio da Navegação-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="exposicao.html">Exposições</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="fotos.html">Fotos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav><!--Fim da Navegação-->
+
+            </header><!-- Fim do Header-->
+
+            <div id="principal">
+
+                <div id="conteudo">
+                    <section id="capa">
+                        <img src="img/museu.png"/>
+                    </section>
+
+                    <section id="postagens">
+                        <article id="video">
+                            <h3>Vídeo:Conheça o Museu</h3>
+                            <iframe width="310" height="170" 
+                            src="https://www.youtube.com/embed/RGUYb-hivrc" 
+                            frameborder="0" allow="accelerometer; autoplay; 
+                            encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        </article>
+
+                        <article id="mapa">
+                            <h3>Mapa: Encontre o Museu</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15914291.403641852!2d-49.89392902082565!3d-13.141885008898068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1586460426834!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </article>
+
+                        <article id="exposicao">
+                            <h3>Exposiçoes</h3>
+                            <ul>
+                                <li><a href="exposicao.html">Os assustadores insetos</a></li>
+
+                                <li><a href="exposicao.html">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+
+                                <li><a href="exposicao.html">Preguiça Gigante e tigre-dente-de-sabre</a></li>
+
+                                <li><a href="exposicao.html">Plantas do Brasil Central</a></li>
+
+                                <li><a href="exposicao.html">Arte com Dinossauros - Paleoarte</a></li>
+
+                                <li><a href="exposicao.html"><strong>Veja todos</strong></a></li>
+                            </ul>
+                        </article>
+
+                        <article id="historia">
+                            <h3>200 anos de História</h3>
+                            <p>
+                                "Nunca poderemos mudar o futuro se não lembrar-mos
+                                do passado, pois nele aprendemos os erros e os acertos 
+                                para aplicar no futuro" Maurício M Santos <br>
+                                Para isso o Museu Nacional conta com os mais diversos
+                                artigos e documentos para ensinar a todos.
+                            </p>
+                            <a href="">Leia mais...</a>
+                        </article>
+                    </section>
+                </div>
+
+                <aside>
+                    <section id="depoimento">
+                        <img src="img/depoimento.png"/>
+                    </section>
+
+                    <section id="visita"> <!--Início da Seção de Visitas-->
+                        <h4>Faça uma visita:</h4>
+                        <form>
+                            <fieldset>
+                                <legend>Selecione uma data</legend>
+                                <label for="data">Data:</label>
+                                <input class="campo" type="text" id="data" value="dd/mm/aaaa"/>
+                                <br>
+                                <label for="qtd">Número de pessoas:</label>
+                                <input class="campo" type="number" id="qtd" value="1" max="20" min="1"/>
+                            </fieldset>
+                            <input class="botao" type="submit" value="Verificar disponibilidade"/>
+                        </form>
+                    </section><!--Fim da Seção de Visitas-->
+
+                    <section id="galeria"> <!--Início da Seção da Galeria-->
+                        <h4>Galeria de Fotos</h4>
+                        <a href="">
+                            <img src="img/imagem1.jpg" height="93" width="93"/>
+                        </a>
+
+                        <a href="">
+                            <img src="img/imagem2.jpg" height="93" width="93"/>
+                        </a>
+
+                        <a href="">
+                            <img src="img/imagem3.jpg" height="93" width="93"/>
+                        </a>
+
+                        <a href="">
+                            <img src="img/imagem4.jpg" height="93" width="93"/>
+                        </a>
+                    </section>
+                </aside>
+
+                <footer>
+                    <p>
+                        2020 <a href="">Museu Nacional</a> - Todos os direitos reservados.
+                    </p>
+                </footer>
+
+            </div>
+        </div><!--Fim do Container-->
+
+    </body>
+</html>
