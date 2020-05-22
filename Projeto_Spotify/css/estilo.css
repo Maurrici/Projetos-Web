@@ -1,10 +1,54 @@
 /* ----- LAYOUT ----- */
+html, body, #home{
+    height: 100%;
+}
+
 body{
     background: url('../img/capa.png'),
                 url('../img/ruido.png'),
                 linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
-    
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Breakpoints */
+
+@media (max-width: 575.98px){ /* Extra Small */
+    h1.display-1{
+        font-size: 3em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){/* Small */
+    h1.display-1{
+        font-size: 3em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){ /* Medium */
+    h1.display-1{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){ /* Large */
+    h1.display-1{
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px){ /* Extra Large */
+    h1.display-1{
+        font-size: 6em;
+    }
 }
 
 /* ----- TOPO ----- */
@@ -28,3 +72,46 @@ nav.bg-opaco{
     margin: 10px 20px;
     background: white;
 }
+
+/* ----- CONTEÚDO ----- */
+
+/* Capa */
+.capa{
+    text-align: center;
+}
+
+h1.display-1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    transition: background 0.4s, color 0,4s;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 1px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
