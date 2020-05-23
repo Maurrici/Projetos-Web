@@ -1,6 +1,7 @@
 /* ----- LAYOUT ----- */
 html, body, #home{
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -75,16 +76,35 @@ nav.bg-opaco{
 
 /* ----- CONTEÚDO ----- */
 
-/* Capa */
-.capa{
-    text-align: center;
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+
+/* Tipografia */
 h1.display-1{
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
     color: white;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* Capa */
+.capa{
+    text-align: center;
 }
 
 .btn-custom{
@@ -115,3 +135,33 @@ h1.display-1{
     color: black;
 }
 
+/* Serviços */
+
+#servicos{
+    background: white;
+}
+
+#servicos h3{
+    color: #7c25f8;
+}
+
+/* Recursos */
+
+#recursos{
+    color: white;
+}
+
+#recursos h2{
+    color: white;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+.rotacionar{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
