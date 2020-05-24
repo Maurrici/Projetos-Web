@@ -21,6 +21,7 @@ body{
 
     .btn-custom{
         margin: 10px 15px;
+        font-size: 1em;
     }
 }
 
@@ -65,7 +66,7 @@ nav.bg-opaco{
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #ff4169;
+    color: #9bf0e1;
 }
 
 .divisor{
@@ -100,6 +101,12 @@ h3{
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.04em;
+}
+
+h4{
+    color: #919496;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
 
 /* Capa */
@@ -164,4 +171,34 @@ h3{
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     padding-left: 80px;
+}
+
+/* ----- RODAPÉ ----- */
+footer{
+    background: black;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer ul{
+    padding-bottom: 20px;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.9em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 6px;
 }
