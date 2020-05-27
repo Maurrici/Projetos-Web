@@ -5,7 +5,7 @@ html, body, #home{
 }
 
 #premium{
-    height: 85%;
+    height: 90%;
 }
 
 body{
@@ -23,6 +23,10 @@ body{
         font-size: 3em;
     }
 
+    h2{
+        font-size: 2.3em;
+    }
+
     #premium h1.display-1{
         font-size: 2.8em;
     }
@@ -31,16 +35,37 @@ body{
         font-size: 1.25em; 
     }
 
+    #cancela h2{
+        font-size: 1.8em;
+    }
+
+    #cancela p{
+        font-size: 0.9em;
+    }
+
+    #planos h2{
+        font-size: 2em;
+    }
+
     .btn-custom{
         margin: 10px auto;
         width: 100%;
         font-size: 1em;
+    }
+
+    .card{
+        height: 100%;
+        width: 400px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){/* Small */
     h1.display-1{
         font-size: 3.5em;
+    }
+
+    h2{
+        font-size: 2.5em;
     }
 
     .btn-custom{
@@ -54,11 +79,26 @@ body{
     #premium h2{ 
         font-size: 1.25em; 
     }
+
+    .btn-custom{
+        margin: 10px auto;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .card{
+        height: 100%;
+        width: 400px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){ /* Medium */
     h1.display-1{
         font-size: 4em;
+    }
+
+    h2{
+        font-size: 3em;
     }
 
     #premium h1.display-1{
@@ -68,11 +108,20 @@ body{
     #premium h2{ 
         font-size: 1.5em; 
     }
+
+    .card{
+        height: 100%;
+        width: 400px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px){ /* Large */
     h1.display-1{
         font-size: 5em;
+    }
+
+    h2{
+        font-size: 3em;
     }
 
     #premium h1.display-1{
@@ -81,6 +130,10 @@ body{
 
     #premium h2{ 
         font-size: 2em; 
+    }
+
+    .card{
+        width: 400px;
     }
 }
 
@@ -89,6 +142,10 @@ body{
         font-size: 6em;
     }
 
+    h2{
+        font-size: 3em;
+    }
+
     #premium h1.display-1{
         font-size: 5em;
     }
@@ -96,6 +153,7 @@ body{
     #premium h2{ 
         font-size: 2em; 
     }
+
 }
 
 /* ----- TOPO ----- */
@@ -137,7 +195,6 @@ h1.display-1{
 }
 
 h2{
-    font-size: 3em;
     font-weight: 700;
     letter-spacing: -0.04em;
 }
@@ -265,7 +322,7 @@ footer ul li{
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 150px;
     color: white;
 }
 
@@ -279,7 +336,7 @@ footer ul li{
 
 #vantagens h2{
     color: black;
-    margin: 100px;
+    margin: 100px 0;
 }
 
 .obs{
@@ -297,11 +354,80 @@ footer ul li{
 /* Sessão Vantagens */
 
 #vantagens{
+    padding-bottom: 200px;
     background: white;
     text-align: center;
 }
 
 #vantagens img{
-    width: 142px;
-    height: 142px;
+    width: 130px;
+    height: 130px;
+}
+
+/* Sessão de Cancelamneto */
+#cancela{
+    background: white;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+/* Sessão de Planos */
+#planos{
+    background: white;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#planos h5{
+    font-size: 1.5em;
+    margin-bottom: 3px;
+}
+
+#planos .obs{
+    height: 100px;
+    line-height: 1;
+    color: rgb(156, 154, 154);
+    width: 100%;
+}
+
+#planos .obs a{
+    line-height: 1;
+    color: rgb(156, 154, 154);
+    text-decoration: underline;
+}
+
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 800px;
+    margin: 0 auto;
+}
+
+.card .card-body {
+    text-align: left;
+}
+
+.card .card-body i{
+    margin-right: 10px;
+}
+
+.card .card-body p{
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.cabecalho{
+    border-bottom: 1px solid rgb(201, 197, 197);
+    margin-bottom: 30px;
+}
+
+.aviso{
+    background-color: rgb(63, 158, 215);
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
