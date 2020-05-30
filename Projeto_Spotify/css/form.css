@@ -1,0 +1,125 @@
+/* Layout */
+
+body{
+    background: white;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+
+/* Estrutura dos Formulários */
+
+.form-central{
+    max-width: 450px;
+    padding-bottom: 130px;
+    margin: 0 auto;
+}
+
+form a{
+    color: #6207e3;
+    text-decoration: underline;
+}
+
+label.form-check-label{
+    font-size: 0.9em;
+}
+
+form.form-group input{
+    font-size: 0.9em;
+}
+
+form.form-group label{
+    font-size: 0.9em;
+    font-weight: 780;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+input.dia{
+    width: 100px;
+}
+
+form.form-group label span{
+    font-weight: 0;
+}
+
+.mes{
+    width: 200px;
+    display: inline-block;
+}
+
+.custom-select{
+    height: 48px;
+}
+
+.ano{
+    width: 120px;
+}
+
+/* Tipografia */
+
+h2{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.1em;
+    font-weight: 780;
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+/* Botões */
+.btn-custom{
+    width: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: rgb(150, 150, 150);
+}
+
+.btn-azul{
+    background-color: rgb(49, 74, 128);
+    color: white;
+}
+
+a.btn-azul:hover{
+    background-color: rgb(107, 130, 177);
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+    color: white;
+}
+
+.btn-roxo:hover{
+    background-color: #7c25f8;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.divisor{
+    background: rgb(155, 155, 155);
+    width: 190px;
+    height: 1px;
+    display: inline-block;
+    margin: 4px 5px;
+    padding: 0 8px;
+}
+
+.cinza{
+    color: rgb(155, 155, 155);
+    letter-spacing: 3px;
+}
+
