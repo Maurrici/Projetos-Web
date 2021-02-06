@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill the Corona | Winner</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <img src="./img/titleKillTheCorona.png" alt="">
+            </div>
+    
+            <div class="row justify-content-center flex-column w-50 m-auto">
+                <div class="input-group">
+                    <select name="difficulty" id="difficulty" class="custom-select bg-dark text-light border-dark">
+                        <option value="0">Fácil</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Difícil</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button onclick="startGame()" class="btn btn-dark border-left border-left-light">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function startGame(){
+            window.location.href = `game.html?difficulty=${document.querySelector('#difficulty').value}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    overflow: hidden;
+    height: 100vh;
+    background: url(/img/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.painel{
+    margin: 5px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+    background-color: white;
+    opacity: 0.5;
+
+    border-radius: 20px;
+}
+
+.time{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0.5;
+}
+
+.logo img{
+    width: 200px;
+}
+
+img.enemy{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.damage{
+    background-color: rgba(175, 73, 73, 0.466);
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    justify-content: center;
+    align-items: flex-start;
+}

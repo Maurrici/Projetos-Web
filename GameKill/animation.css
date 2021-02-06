@@ -1,0 +1,41 @@
+@keyframes up{
+    from{
+        transform: translateY(0%);
+    }
+
+    to{
+        transform: translateY(200%);
+    }
+}
+
+@keyframes rig{
+    from{
+        transform: translateX(0%);
+    }
+
+    to{
+        transform: translateX(200%);
+    }
+}
+
+@keyframes dig{
+    from{
+        transform: rotate(0deg) translate(0%, 0%);
+    }
+
+    to{
+        transform: rotate(360deg) translate(200%, 200%);
+    }
+}
+
+.animate-up{
+    animation: up 2s infinite alternate-reverse;
+}
+
+.animate-right{
+    animation: rig 2s infinite alternate-reverse;
+}
+
+.animate-diagonal{
+    animation: dig 2s infinite alternate-reverse;
+}
