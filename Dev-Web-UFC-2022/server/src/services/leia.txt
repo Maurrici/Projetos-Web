@@ -1,0 +1,1 @@
+Nessa pasta ficam configurações de API ou outros serviços

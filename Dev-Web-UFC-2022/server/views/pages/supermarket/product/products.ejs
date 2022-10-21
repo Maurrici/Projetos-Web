@@ -1,0 +1,76 @@
+<%- include("../../../partials/header.ejs")  %> 
+
+<%- include("../../../partials/navbarSupermarket.ejs") %> 
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-6">
+            <h4>Produtos</h4>
+        </div>
+
+        <div class="col-6 d-flex justify-content-end">
+            <a href="/product" class="button-add">Adicionar produto</a>
+        </div>
+    </div>
+
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Valor(R$)</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Coca-Cola</td>
+                <td>Refrigerante de cola.</td>
+                <td>Coca-cola</td>
+                <td>200</td>
+                <td>9.0</td>
+                <td>
+                    <div class="d-flex justify-content-around">
+                        <a href="/product/1" class="action-item">
+                            <img src="/icon/edit.png" class="img-fluid" alt="Editar">
+                            <span class="tooltip-text">Editar</span>
+                        </a>
+                        <a href="" class="action-item">
+                            <img src="/icon/delete.png" class="img-fluid" alt="Deletar">
+                            <span class="tooltip-text">Deletar</span>
+                        </a>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Biscoito de Chocolate</td>
+                <td>Biscoito recheado sabor chocolate.</td>
+                <td>Richester</td>
+                <td>14</td>
+                <td>120.55</td>
+                <td>
+                    <div class="d-flex justify-content-around">
+                        <a href="" class="action-item">
+                            <img src="/icon/edit.png" class="img-fluid" alt="Editar">
+                            <span class="tooltip-text">Editar</span>
+                        </a>
+                        <a href="" class="action-item">
+                            <img src="/icon/delete.png" class="img-fluid" alt="Deletar">
+                            <span class="tooltip-text">Deletar</span>
+                        </a>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+</div>
+
+<%- include("../../../partials/footer.ejs")  %> 

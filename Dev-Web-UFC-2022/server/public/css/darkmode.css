@@ -1,0 +1,205 @@
+body.dark{
+    background-color: #2D323B;
+}
+
+.dark a{
+    color: #2D323B;
+}
+
+.dark a:hover{
+    color: #2D323B;
+}
+
+/* Titles */
+
+.dark h3{
+    color: #2D323B;
+}
+
+.dark h4{
+    color: #2D323B;
+    background-color: #FC9494;
+}
+
+.dark h5{
+    color: #2D323B;
+}
+
+.dark .title{
+    background-color: #FC9494;
+}
+
+.dark .title-name p{
+    color: #2D323B;
+}
+
+.dark .subtitle-description{
+    background-color: #2D323B;
+}
+
+/* Buttons */
+
+.dark .button-add{
+    color: #FC9494;
+    background-color: #2D323B;
+    border: 1px solid #FC9494;
+}
+
+.dark .button-add:hover{
+    color: #2D323B;
+    background-color: #FC9494;
+}
+
+.dark .button-submit{
+    background: #FE7878;
+    border: 2px solid #FE7878;
+    color: #2D323B;
+}
+
+.dark .button-submit:hover{
+    background: #2D323B;
+    border: 2px solid #FE7878;
+    color: #FE7878;
+}
+
+/* Table */
+
+.dark table.table{
+    color: #2D323B;
+    background-color: #FC9494;
+}
+
+.dark table.table thead{
+    color: #FFFFFF;
+    background-color: #BB2A2A;
+}
+
+.dark a.action-item{
+    color: #2D323B;
+}
+
+.dark tbody, .dark td, .dark tfoot, .dark th, .dark thead, .dark tr {
+    border-color: #2D323B;
+}
+
+/* Charts */
+.dark .chart-title{
+    background-color: #FC9494;
+    color: #2D323B;
+}
+
+.dark .chart-body{
+    background-color: #A1A1A1;
+}
+
+/* Formulário */
+.dark form .form-input, .input-search{
+    background: #ffffff61;
+    border: 2px solid #FE7878;
+    box-shadow: 8px 4px 4px #a71b1b40;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.dark form .form-input::placeholder, .input-search::placeholder{
+    color: #FFFFFF;
+}
+
+.dark form .form-label{
+    background: #FE7878;
+    color: #2D323B;
+}
+
+/* Boxes */
+.dark .ticket-box{
+    background-color: #111318;
+    color: #FE7878;
+}
+
+.dark .ticket-header{
+    border-bottom: 1px solid #FC94944f;
+}
+
+.dark .ticket-body{
+    border-bottom: 2px dashed #FC94944f;
+}
+
+.dark .ticket-body-header{
+    border-bottom: 1px solid #FC94944f;
+}
+
+.dark .pill-label{
+    background-color: #FE7878;
+    color: #2D323B;
+    box-shadow: 3px 2px 3px #43434387;
+}
+
+.dark .pill-value{
+    background-color: #2D323B;
+    color: #FE7878;
+    box-shadow: 3px 2px 3px #43434387;
+}
+
+.dark .shopping-list, .product-box{
+    background: #2D323Bb0;
+    border: 2px solid #FE7878;
+    box-shadow: 8px 4px 4px #a71b1b40;
+    color: #FE7878;
+}
+
+/* Banner */
+.dark .banner{
+    background-color: #FC9494; 
+}
+
+.dark .banner-text{
+    color: #2D323B;
+}
+
+/* Card */
+
+.dark .card{
+    box-shadow: 2px 4px 2px #a71b1b78;
+    background-color:#FE7878;
+    color: #2D323B;
+}
+
+.dark .green{
+    background-color: #62B255;
+    box-shadow: 2px 4px 2px #1ba72978 !important;
+}
+
+.dark .blue{
+    background-color: #65BED0;
+    box-shadow: 2px 4px 2px #1b92a778 !important;
+}
+
+.dark .light{
+    background-color: #FC9494;
+    box-shadow: 2px 4px 2px #a71b1b78 !important;
+}
+
+.dark .card.light:hover{
+    transform: scale(0.95);
+    background-color: #2D323B;
+    color: #FE7878;
+}
+
+/* Navbar */
+.dark nav.navbar{
+    background-color: #FC9494;
+}
+
+.dark nav .navbar-brand, .dark nav .nav-link{
+    color: #2D323B;
+}
+
+.dark nav .navbar-brand{
+ font-weight: bold;
+}
+
+.dark nav .nav-link:hover{
+    color: #2D323B;
+    border-bottom: 1px solid #2D323B;
+    margin-bottom: 0px;
+}

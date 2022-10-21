@@ -1,0 +1,47 @@
+<%- include("../partials/header.ejs")  %> 
+
+<%- include("../partials/navbar.ejs") %> 
+
+<div>
+    <div class="banner right mt-3 row">
+        <div class="banner-img col-12 col-md-6">
+            <img class="img-fluid" src="/img/home-banner.png" alt="">
+        </div>
+        <div class="banner-text col-12 col-md-6">
+            Clientes e Mercados em um só lugar com facilidade e comodidade nas compras e vendas. 
+        </div>
+    </div>
+
+    <div class="banner left mt-3 p-3">
+        <h5>Cadastre-se e tenha acesso as nossas vantagens:</h5>
+        <div class="row justify-content-around">
+            <div class="card col-12 col-md-3">
+                <a href="/register/supermarket">
+                    <div class="card-img">
+                        <img src="/img/supermarket.jpg" class="img-fluid">
+                    </div>
+                    <div class="card-title">
+                        Cadastrar Mercado
+                    </div>
+                </a>
+            </div>
+
+            <div class="card col-12 col-md-3 green">
+                <a href="/register/customer">
+                    <div class="card-img">
+                        <img src="/img/customer.jpg" class="img-fluid">
+                    </div>
+                    <div class="card-title">
+                        Cadastrar como cliente
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-item-center mt-4">
+        <a href="/supermarkets" class="button-submit">Ver Mercados Cadastrados</a>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs")  %> 

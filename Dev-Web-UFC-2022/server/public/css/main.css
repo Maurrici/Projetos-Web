@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #F1E0E0;
+    padding-bottom: 24px;
+    overflow-x: hidden;
+}
+
+body .container{
+    margin-top: 16px;
+}
+
+.center-box{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: #FFFFFF;
+}
+
+/* Titles */
+
+h3{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+h4{
+    padding: 16px 0px;
+    border-radius: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2.5em;
+    background-color: #E35959;
+}
+
+h5{
+    font-size: 2em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+h6{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #E35959;
+}
+
+.title-name p{
+    color: #FFFFFF;
+    font-size: 1.3em;
+    padding-left: 16px;
+}
+
+.title-img{
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #ffffff;
+}
+
+.subtitle-description{
+    height: max-content;
+    padding: 16px 0px;
+    border-radius: 16px;
+    text-align: center;
+    color: #E35959;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+}
+
+
+/* Buttons */
+
+.button-add{
+    text-decoration: none;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #E35959;
+    background-color: #FFFFFF;
+    border: 1px solid #E35959;
+    transition: all 0.4s;
+}
+
+.button-add:hover{
+    color: #FFFFFF;
+    background-color: #E35959;
+}
+
+.button-submit{
+    text-decoration: none;
+    width: fit-content;
+    padding: 8px;
+    background: #E13535;
+    border-radius: 8px;
+    border: 2px solid #E13535;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.button-submit:hover{
+    background: #FFFFFF;
+    border: 2px solid #E13535;
+    color: #E13535;
+}
+
+
+/* Table */
+
+table.table{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #bb2a2aa3;
+    border-radius: 16px;
+}
+
+table.table thead{
+    font-weight: bolder;
+    background-color: #BB2A2A;
+}
+
+a.action-item{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.action-item img{
+    width: 24px;
+    height: 24px;
+}
+
+.tooltip-text{
+    visibility: hidden;
+    width: fit-content;
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+a.action-item:hover .tooltip-text{
+    visibility: visible;
+}
+
+/* Charts */
+.chart-title{
+    margin: 0;
+    padding: 8px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #E35959;
+    color: #FFFFFF;
+}
+
+.chart-body{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #FFFFFF;
+}
+
+
+/* Formulário */
+form .form-input, .input-search{
+    width: 100%;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.69);
+    border: 2px solid #E13535;
+    box-shadow: 8px 4px 4px rgba(167, 27, 27, 0.25);
+    border-radius: 0px 8px 8px 8px;
+    color: #998585;
+    font-weight: 400;
+}
+
+.input-search{
+    border-radius: 8px;
+}
+
+form .form-label{
+    margin: 0;
+    padding: 4px 8px;
+    background: #E13535;
+    border-radius: 8px 8px 0px 0px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+
+/* Boxes */
+.ticket-box{
+    width: 80%;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #E13535;
+}
+
+.ticket-header{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E359594f;
+}
+
+.ticket-body{
+    border-bottom: 2px dashed #E359594f;
+}
+
+.ticket-body-header{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #E359594f;
+}
+
+.ticket-item{
+    text-align: center;
+}
+
+.ticket-footer{
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.pill-label{
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #E13535;
+    color: #FFFFFF;
+    box-shadow: 3px 2px 3px rgba(67, 67, 67, 0.529);
+}
+
+.pill-value{
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #FFFFFF;
+    color: #E13535;
+    box-shadow: 3px 2px 3px rgba(67, 67, 67, 0.529);
+}
+
+.shopping-list, .product-box{
+    background: rgba(255, 255, 255, 0.69);
+    border: 2px solid #E13535;
+    box-shadow: 8px 4px 4px rgba(167, 27, 27, 0.25);
+    border-radius: 8px;
+    color: #E13535;
+}
+
+.shopping-list{
+    min-height: 40vh;
+}
+
+.products-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-box{
+    margin: 4px 0px;
+    min-height: 200px;
+    height: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Banner */
+.banner{
+    background-color: #E35959;
+    
+}
+
+.right{
+    border-radius: 16px 0px 0px 16px;
+    margin-left: 2em;
+}
+
+.left{
+    border-radius: 0px 16px 16px 0px;
+    margin-right: 2em;
+}
+
+.banner-img{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* Card */
+
+.card{
+    margin: 16px 0px;
+    border: none;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px rgba(167, 27, 27, 0.47);
+    background-color:#E13535;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-img{
+    border-radius: 0px;
+}
+
+.card-title{
+    padding-top: 4px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.green{
+    background-color: #62B255;
+    box-shadow: 2px 4px 2px rgba(27, 167, 41, 0.47) !important;
+}
+
+.blue{
+    background-color: #55A2B2;
+    box-shadow: 2px 4px 2px rgba(27, 146, 167, 0.47) !important;
+}
+
+.light{
+    background-color: #E35959;
+    box-shadow: 2px 4px 2px rgba(167, 27, 27, 0.47) !important;
+}
+
+.card.light:hover{
+    transform: scale(0.95);
+    background-color: #FFFFFF;
+    color: #E13535;
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    margin-left: 2px;
+    transition: 0.3s all;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    width: 10px;
+  }

@@ -1,0 +1,64 @@
+<%- include("../../../partials/header.ejs")  %> 
+
+<%- include("../../../partials/navbarSupermarket.ejs") %>
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-6">
+            <h4>Vendas</h4>
+        </div>
+    </div>
+
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Comprador</th>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Quantidade de Itens</th>
+                <th scope="col">Valor(R$)</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Maurício de Moura</td>
+                <td>Evelyn</td>
+                <td>14</td>
+                <td>120.55</td>
+                <td>15/10/2022</td>
+                <td>
+                    <div class="d-flex justify-content-around">
+                        <a href="/sale/1" class="action-item">
+                            <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
+                            <span class="tooltip-text">Detalhar</span>
+                        </a>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Vinicius</td>
+                <td>Pedro Henrique</td>
+                <td>14</td>
+                <td>100.00</td>
+                <td>15/10/2022</td>
+                <td>
+                    <div class="d-flex justify-content-around">
+                        <a href="" class="action-item">
+                            <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
+                            <span class="tooltip-text">Detalhar</span>
+                        </a>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+</div>
+
+<%- include("../../../partials/footer.ejs")  %> 
