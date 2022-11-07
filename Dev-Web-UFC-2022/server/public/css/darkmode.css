@@ -93,7 +93,7 @@ body.dark{
 }
 
 /* Formulário */
-.dark form .form-input, .input-search{
+.dark form .form-input, .dark .input-search{
     background: #ffffff61;
     border: 2px solid #FE7878;
     box-shadow: 8px 4px 4px #a71b1b40;
@@ -101,7 +101,7 @@ body.dark{
     font-weight: 700;
 }
 
-.dark form .form-input::placeholder, .input-search::placeholder{
+.dark form .form-input::placeholder, .dark .input-search::placeholder{
     color: #FFFFFF;
 }
 
