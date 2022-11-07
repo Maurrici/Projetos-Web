@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "cpf": 123456,
+            "name": "Maurício de Moura dos Santos",
+            "address": "Rua Pedestre F, 204 - Caucaia, CE",
+            "email": "mauriciomoura837@gmail.com",
+            "password": "asdasfafaasda"
+        }
+    ],
+    "supermarket": [
+        {
+            "id": 1,
+            "cnpj": "123456489712346",
+            "name": "Super Bodega",
+            "address": "Rua Morélia, 500 - Caucaia, CE",
+            "description": "Mercadinho amigo do bairro...",
+            "password": "asdasdasfasd",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Bolacha Creme Crack",
+                    "description": "Bolacha seca e crocante",
+                    "brand": "Fortaleza",
+                    "quantity": 50,
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "seller": [
+        {
+            "cpf": 1,
+            "supermarketId": 1,
+            "email": "everton837@gmail.com",
+            "password": "asdasdasda"
+        }
+    ],
+    "shopping": [
+        {
+            "id": 1,
+            "date": "2022-04-03T10:00:00",
+            "supermarketId": 1,
+            "sellerId": 1,
+            "customerId": 1,
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Bolacha Creme Crack",
+                    "description": "Bolacha seca e crocante",
+                    "brand": "Fortaleza",
+                    "quantity": 2,
+                    "value": 10
+                }
+            ]
+        }
+    ]
+}
