@@ -9,10 +9,8 @@ var router = express.Router();
 // Rotas padrão
 router.get('/', HomeController.index);
 router.get('/register', HomeController.register);
-router.get('/register/supermarket', HomeController.registerSupermarket);
-router.get('/register/customer', HomeController.registerCustomer);
-router.get('/loginType', HomeController.loginType);
 router.get('/login', HomeController.login);
+router.post('/login', HomeController.postLogin);
 router.get('/supermarkets', HomeController.supermarkets);
 router.get('/supermarkets/:id', HomeController.supermarket);
 

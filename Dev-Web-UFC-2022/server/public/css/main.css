@@ -5,6 +5,7 @@
 }
 
 body{
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
     background-color: #F1E0E0;
     padding-bottom: 24px;
@@ -34,7 +35,7 @@ a:hover{
 /* Titles */
 
 h3{
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bolder;
     color: #FFFFFF;
 }
@@ -45,12 +46,12 @@ h4{
     text-align: center;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     background-color: #E35959;
 }
 
 h5{
-    font-size: 2em;
+    font-size: 2rem;
     text-align: left;
     color: #FFFFFF;
 }
@@ -71,7 +72,7 @@ h6{
 
 .title-name p{
     color: #FFFFFF;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     padding-left: 16px;
 }
 
@@ -89,8 +90,14 @@ h6{
     text-align: center;
     color: #E35959;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     background-color: #FFFFFF;
+}
+
+.login-name{
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -101,7 +108,7 @@ h6{
     width: fit-content;
     padding: 8px;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     color: #E35959;
@@ -314,12 +321,12 @@ form .form-label{
 
 .right{
     border-radius: 16px 0px 0px 16px;
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 
 .left{
     border-radius: 0px 16px 16px 0px;
-    margin-right: 2em;
+    margin-right: 2rem;
 }
 
 .banner-img{
@@ -334,7 +341,7 @@ form .form-label{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #FFFFFF;
     border-radius: 0px 8px 8px 0px;
 }
@@ -365,7 +372,7 @@ form .form-label{
 .card-title{
     padding-top: 4px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 

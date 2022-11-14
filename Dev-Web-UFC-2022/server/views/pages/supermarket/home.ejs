@@ -1,6 +1,6 @@
 <%- include("../../partials/header.ejs")  %> 
 
-<%- include("../../partials/navbarSupermarket.ejs") %> 
+<%- include("../../partials/navbar.ejs") %> 
 
 <div class="container">
     <div class="title row">
@@ -8,8 +8,8 @@
             <img src="/assets/supermarket/supermarket-example.png" alt="Super mercado exemplo" class="img-fluid">
         </div>
         <div class="title-name col-8">
-            <h3>Super Mercado Exemplo</h3>
-            <p class="pt-1">Trazendo conforto e qualidade para nossos clientes!</p>
+            <h3><%= supermarket.name %></h3>
+            <p class="pt-1"><%= supermarket.description %> </p>
         </div>
     </div>
 

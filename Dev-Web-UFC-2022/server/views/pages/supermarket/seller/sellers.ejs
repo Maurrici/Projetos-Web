@@ -1,14 +1,18 @@
 <%- include("../../../partials/header.ejs")  %> 
 
-<%- include("../../../partials/navbarSupermarket.ejs") %>
+<%- include("../../../partials/navbar.ejs") %>
 
 <div class="container">
     <div class="row align-items-center">
-        <div class="col-6">
+        <div class="login-name">
+            <%= supermarket.name %>
+        </div>
+
+        <div class="col-12 col-md-6">
             <h4>Vendedores</h4>
         </div>
 
-        <div class="col-6 d-flex justify-content-end">
+        <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center">
             <a href="/supermarket/seller" class="button-add">Adicionar Vendedor</a>
         </div>
     </div>
@@ -17,49 +21,33 @@
         <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nome</th>
                 <th scope="col">CPF</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
                 <th scope="col">Ações</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Maurício de Moura</td>
-                <td>123456789-45</td>
-                <td>
-                    <div class="d-flex justify-content-around">
-                        <a href="/seller/1" class="action-item">
-                            <img src="/icon/edit.png" class="img-fluid" alt="Editar">
-                            <span class="tooltip-text">Editar</span>
-                        </a>
-
-                        <a href="" class="action-item">
-                            <img src="/icon/delete.png" class="img-fluid" alt="Deletar">
-                            <span class="tooltip-text">Deletar</span>
-                        </a>
-                    </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Vinicius</td>
-                <td>789456123-78</td>
-                <td>
-                    <div class="d-flex justify-content-around">
-                        <a href="" class="action-item">
-                            <img src="/icon/edit.png" class="img-fluid" alt="Editar">
-                            <span class="tooltip-text">Editar</span>
-                        </a>
-
-                        <a href="" class="action-item">
-                            <img src="/icon/delete.png" class="img-fluid" alt="Deletar">
-                            <span class="tooltip-text">Deletar</span>
-                        </a>
-                    </div>
-                </td>
-              </tr>
+            <% sellers.forEach(s => { %>
+                <tr>
+                    <th scope="row"><%= s.cpf %></th>
+                    <td><%= s.name %></td>
+                    <td><%= s.email %></td>
+                    <td>
+                        <div class="d-flex justify-content-around">
+                            <a href="/seller/<%= s.cpf %>" class="action-item">
+                                <img src="/icon/edit.png" class="img-fluid" alt="Editar">
+                                <span class="tooltip-text">Editar</span>
+                            </a>
+    
+                            <a href="" class="action-item">
+                                <img src="/icon/delete.png" class="img-fluid" alt="Deletar">
+                                <span class="tooltip-text">Deletar</span>
+                            </a>
+                        </div>
+                    </td>
+                  </tr>
+            <% }) %>
             </tbody>
           </table>
     </div>

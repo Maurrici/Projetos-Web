@@ -1,35 +1,57 @@
 class HomeController{
-
     async index(req, res){
-        res.render('pages/home', {title: "Home"});
+        const pageConfig = {
+            title: "Home",
+            navType: undefined 
+        }
+
+        res.render('pages/home', {...pageConfig});
     }
 
     async register(req, res){
-        res.render('pages/register', {title: "Cadastro"});
-    }
+        const pageConfig = {
+            title: req.query["type"] == "supermarket" ? "Cadastro de Super Mercado" : "Cadastro de Cliente",
+            navType: undefined 
+        }
 
-    async registerSupermarket(req, res){
-        res.render('pages/registerSupermarket', {title: "Cadastro de Super Mercado"});
-    }
-
-    async registerCustomer(req, res){
-        res.render('pages/registerCustomer', {title: "Cadastro de Cliente"});
-    }
-
-    async loginType(req, res){
-        res.render('pages/loginType', {title: "Login"});
+        res.render('pages/register', {...pageConfig, type: req.query["type"]});
     }
 
     async login(req, res){
-        res.render('pages/login', {title: "Login"});
+        const pageConfig = {
+            title: "Login",
+            navType: undefined 
+        }
+
+        res.render('pages/login', {...pageConfig, type: req.query["type"]});
+    }
+
+    async postLogin(req, res){
+        let type = req.body.type;
+        let email = req.body.email;
+        let password = req.body.password;
+
+        if(type == "supermarket") res.redirect('/supermarket');
+        else if(type == "customer") res.redirect('/customer');
+        else if(type == "seller") res.redirect('/seller');
     }
 
     async supermarkets(req, res){
-        res.render('pages/supermarkets', {title: "Super Mercados"});
+        const pageConfig = {
+            title: "Super Mercados",
+            navType: undefined 
+        }
+
+        res.render('pages/supermarkets', {...pageConfig});
     }
 
     async supermarket(req, res){
-        res.render('pages/supermarket', {title: "Super Mercado Exemplo"});
+        const pageConfig = {
+            title: "Super Mercado Exemplo",
+            navType: undefined 
+        }
+
+        res.render('pages/supermarket', {...pageConfig});
     }
 }
 

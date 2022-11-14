@@ -22,3 +22,28 @@ nav .nav-link:hover{
     border-bottom: 1px solid #FFFFFF;
     margin-bottom: 0px;
 }
+
+.config-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.config-item{
+    border: 0px;
+    margin: 0px 2px;
+    padding: 6px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+.config-item:hover{
+    transform: scale(0.8);
+}
+
+.config-item svg{
+    fill: #E35959;
+}

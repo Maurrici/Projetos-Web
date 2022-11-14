@@ -1,14 +1,29 @@
 class SellerController{
     async index(req, res){
-        res.render('pages/seller/home', {title: "Home"});
+        const pageConfig = {
+            title: "Home",
+            navType: "seller"
+        }
+
+        res.render('pages/seller/home', {...pageConfig});
     }
 
     async sale(req, res){
-        res.render('pages/seller/sale', {title: "Cadastro de Compra"});
+        const pageConfig = {
+            title: "Cadastro de Compra",
+            navType: "seller"
+        }
+
+        res.render('pages/seller/sale', {...pageConfig});
     }
 
     async registerFast(req, res){
-        res.render('pages/seller/registerFast', {title: "Cadastro rápido de clientes"});
+        const pageConfig = {
+            title: "Cadastro rápido de clientes",
+            navType: "seller"
+        }
+        
+        res.render('pages/seller/registerFast', {...pageConfig});
     }
 }
 

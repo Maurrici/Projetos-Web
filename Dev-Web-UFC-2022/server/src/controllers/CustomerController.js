@@ -1,18 +1,38 @@
 class CustomerController{
     async index(req, res){
-        res.render("pages/customer/home", {title: "Home"});
+        const pageConfig = {
+            title: "Home",
+            navType: "customer"
+        }
+
+        res.render("pages/customer/home", {...pageConfig});
     }
 
     async profile(req, res){
-        res.render("pages/customer/profile", {title: "Perfil"});
+        const pageConfig = {
+            title: "Perfil",
+            navType: "customer"
+        }
+        
+        res.render("pages/customer/profile", {...pageConfig});
     }
 
     async shopping(req, res){
-        res.render("pages/customer/shopping", {title: "Minhas Compras"});
+        const pageConfig = {
+            title: "Minhas Compras",
+            navType: "customer"
+        }
+        
+        res.render("pages/customer/shopping", {...pageConfig});
     }
 
     async detailShopping(req, res){
-        res.render("pages/customer/detailShopping", {title: "Detalhes de Compra"});
+        const pageConfig = {
+            title: "Detalhes de Compra",
+            navType: "customer"
+        }
+
+        res.render("pages/customer/detailShopping", {...pageConfig});
     }
 }
 

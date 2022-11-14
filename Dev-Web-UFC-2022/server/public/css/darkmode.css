@@ -37,6 +37,10 @@ body.dark{
     background-color: #2D323B;
 }
 
+.dark .login-name{
+    color: #FFFFFF;
+}
+
 /* Buttons */
 
 .dark .button-add{
@@ -202,4 +206,12 @@ body.dark{
     color: #2D323B;
     border-bottom: 1px solid #2D323B;
     margin-bottom: 0px;
+}
+
+.dark .config-item{
+    background-color: #2D323B;
+}
+
+.dark .config-item svg{
+    fill: #FE7878;
 }

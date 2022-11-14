@@ -1,10 +1,13 @@
 <%- include("../../../partials/header.ejs")  %> 
 
-<%- include("../../../partials/navbarSupermarket.ejs") %>
+<%- include("../../../partials/navbar.ejs") %>
 
 <div class="container">
     <div class="row align-items-center">
-        <div class="col-6">
+        <div class="login-name">
+            <%= supermarket.name %>
+        </div>
+        <div class="col-12 col-md-6">
             <h4>Vendas</h4>
         </div>
     </div>
@@ -23,38 +26,24 @@
               </tr>
             </thead>
             <tbody>
+            <% sales.forEach(sale => { %>
               <tr>
-                <th scope="row">1</th>
-                <td>Maurício de Moura</td>
-                <td>Evelyn</td>
-                <td>14</td>
-                <td>120.55</td>
-                <td>15/10/2022</td>
+                <th scope="row"><%= sale.id %></th>
+                <td><%= sale.customerName %></td>
+                <td><%= sale.sellerName %></td>
+                <td><%= sale.products.reduce((total, p) => total + p.quantity, 0) %></td>
+                <td><%= sale.products.reduce((total, p) => total + (p.quantity * p.value), 0) %></td>
+                <td><%= sale.date %></td>
                 <td>
                     <div class="d-flex justify-content-around">
-                        <a href="/sale/1" class="action-item">
+                        <a href="/sale/<%= sale.id %>" class="action-item">
                             <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
                             <span class="tooltip-text">Detalhar</span>
                         </a>
                     </div>
                 </td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Vinicius</td>
-                <td>Pedro Henrique</td>
-                <td>14</td>
-                <td>100.00</td>
-                <td>15/10/2022</td>
-                <td>
-                    <div class="d-flex justify-content-around">
-                        <a href="" class="action-item">
-                            <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
-                            <span class="tooltip-text">Detalhar</span>
-                        </a>
-                    </div>
-                </td>
-              </tr>
+            <% }) %>
             </tbody>
           </table>
     </div>
