@@ -94,12 +94,17 @@ h6{
     background-color: #FFFFFF;
 }
 
-.login-name{
+.login-name, .total-value{
     padding: 8px;
     text-align: center;
     font-size: 1.5rem;
 }
 
+.total-value{
+    padding-left: 8px;
+    text-align: left;
+    color: #E13535;
+}
 
 /* Buttons */
 
@@ -258,6 +263,11 @@ form .form-label{
     text-align: center;
 }
 
+.ticket-item.select{
+    color: #f1f1f1;
+    background-color: #E35959;
+}
+
 .ticket-footer{
     text-align: center;
     font-weight: bold;
@@ -313,10 +323,21 @@ form .form-label{
     overflow-y: scroll;
 }
 
+.product-box:hover{
+    cursor: pointer;
+}
+
+.product-box input{
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+}
+
 /* Banner */
 .banner{
     background-color: #E35959;
-    
 }
 
 .right{

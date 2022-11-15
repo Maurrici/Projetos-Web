@@ -1,3 +1,10 @@
+const seller = {
+    cpf: 12345688,
+    name: "Evelyn",
+    supermarketId: 1,
+    email: "eve@gmail.com",
+}
+
 class SellerController{
     async index(req, res){
         const pageConfig = {
@@ -5,7 +12,7 @@ class SellerController{
             navType: "seller"
         }
 
-        res.render('pages/seller/home', {...pageConfig});
+        res.render('pages/seller/home', {...pageConfig, seller});
     }
 
     async sale(req, res){
@@ -14,7 +21,7 @@ class SellerController{
             navType: "seller"
         }
 
-        res.render('pages/seller/sale', {...pageConfig});
+        res.render('pages/seller/sale', {...pageConfig, seller});
     }
 
     async registerFast(req, res){

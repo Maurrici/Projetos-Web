@@ -3,6 +3,9 @@
 <%- include("../../partials/navbar.ejs") %>
 
 <div class="container">
+    <div class="login-name">
+      <%= user.name %>
+    </div>
     <div class="row align-items-center">
         <div class="col-12 col-md-6">
             <h4>Minhas Compras</h4>
@@ -22,36 +25,23 @@
               </tr>
             </thead>
             <tbody>
+            <% shopping.forEach(s => { %>
               <tr>
-                <th scope="row">1</th>
-                <td>Super Mercado Exemplo</td>
-                <td>14</td>
-                <td>120.55</td>
-                <td>15/10/2022</td>
+                <th scope="row"><%= s.id %></th>
+                <td><%= s.supermarketName %></td>
+                <td><%= s.products.reduce((total, p) => total + p.quantity, 0) %></td>
+                <td><%= s.products.reduce((total, p) => total + (p.quantity * p.value), 0) %></td>
+                <td><%= s.date %></td>
                 <td>
                     <div class="d-flex justify-content-around">
-                        <a href="/shopping/1" class="action-item">
+                        <a href="/shopping/<%= s.id %>" class="action-item">
                             <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
                             <span class="tooltip-text">Detalhar</span>
                         </a>
                     </div>
                 </td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Êxito Mercantil</td>
-                <td>14</td>
-                <td>100.00</td>
-                <td>15/10/2022</td>
-                <td>
-                    <div class="d-flex justify-content-around">
-                        <a href="" class="action-item">
-                            <img src="/icon/details.png" class="img-fluid" alt="Detalhar">
-                            <span class="tooltip-text">Detalhar</span>
-                        </a>
-                    </div>
-                </td>
-              </tr>
+            <% }) %>
             </tbody>
           </table>
     </div>

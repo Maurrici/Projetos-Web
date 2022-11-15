@@ -41,6 +41,10 @@ body.dark{
     color: #FFFFFF;
 }
 
+.dark .total-value{
+    color: #E35959;
+}
+
 /* Buttons */
 
 .dark .button-add{
@@ -144,7 +148,7 @@ body.dark{
     box-shadow: 3px 2px 3px #43434387;
 }
 
-.dark .shopping-list, .product-box{
+.dark .shopping-list, .dark .product-box{
     background: #2D323Bb0;
     border: 2px solid #FE7878;
     box-shadow: 8px 4px 4px #a71b1b40;

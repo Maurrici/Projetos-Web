@@ -3,28 +3,38 @@
 <%- include("../../partials/navbar.ejs") %> 
 
 <div class="container">
+    <div class="login-name">
+        <%= user.name %>
+    </div>
     <div class="row mt-4">
         <div class="col-12 col-md-6 mb-3">
             <h5 class="chart-title">Produtos mais comprados</h5>
             <div class="chart-body">
-                <img src="/assets/supermarket/chart.png" class="img-fluid" width="240">
+                <canvas id="chart1"></canvas>
             </div>
         </div>
 
         <div class="col-12 col-md-6 mb-3">
             <h5 class="chart-title">Gastos por supermercados</h5>
             <div class="chart-body">
-                <img src="/assets/supermarket/chart.png" class="img-fluid" width="240">
-            </div>
-        </div>
-
-        <div class="col-12 mb-3">
-            <h5 class="chart-title">Gasto mensal em compras</h5>
-            <div class="chart-body">
-                <img src="/assets/supermarket/chart.png" class="img-fluid" width="240">
+                <canvas id="chart2"></canvas>
             </div>
         </div>
     </div>
 </div>
+<script>
+    // Requisição para gráfico 1
+    let name = 'Quantidade Vendida';
+    let labels = ["Feijão", "Arroz", "Caixa de Leite", "Saco de Pão", "Creme Cracker"];
+    let values = [10, 10, 4, 5, 1];
 
+    createChartBar(document.getElementById("chart1"), name, labels, values);
+
+    // Requisição para gráfico 2
+    name = 'Valor (R$)';
+    labels = ["Êxito Mercantil", "Super Bodega", "Mercadinho Popular"];
+    values = [125, 25, 10];
+
+    createChartBar(document.getElementById("chart2"), name, labels, values);
+</script>
 <%- include("../../partials/footer.ejs")  %> 
