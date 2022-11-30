@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "cnpj": "123456489712346",
+        "name": "Êxito Mercantil",
+        "email": "exito@email.com",
+        "address": "Rua Morélia, 500 - Caucaia, CE",
+        "description": "Mercadinho amigo do bairro...",
+        "password": "asdasdasfasd",
+        "products": [
+            {
+                "id": 1,
+                "name": "Bolacha Creme Crack",
+                "description": "Bolacha seca e crocante",
+                "brand": "Fortaleza",
+                "quantity": 50,
+                "value": 10
+            }
+        ]
+    }
+]

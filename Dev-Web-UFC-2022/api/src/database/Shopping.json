@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "date": "2022-04-03T10:00:00",
+        "supermarketId": 1,
+        "sellerId": 1,
+        "customerId": 1,
+        "products": [
+            {
+                "id": 1,
+                "name": "Bolacha Creme Crack",
+                "description": "Bolacha seca e crocante",
+                "brand": "Fortaleza",
+                "quantity": 2,
+                "value": 10
+            }
+        ]
+    }
+]
